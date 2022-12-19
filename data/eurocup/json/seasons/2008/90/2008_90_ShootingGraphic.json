@@ -1,1 +1,8 @@
-{"FastbreakPointsA": 0, "FastbreakPointsB": 0, "TurnoversPointsA": 0, "TurnoversPointsB": 0, "SecondChancePointsA": 0, "SecondChancePointsB": 0}
+{
+  "FastbreakPointsA": null,
+  "FastbreakPointsB": null,
+  "TurnoversPointsA": null,
+  "TurnoversPointsB": null,
+  "SecondChancePointsA": null,
+  "SecondChancePointsB": null
+}

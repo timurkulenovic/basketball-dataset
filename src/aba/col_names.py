@@ -2,27 +2,27 @@ import pandas as pd
 
 
 col_names_games = [
-    ("Season", pd.StringDtype()),
-    ("Stage", pd.StringDtype()),
-    ("Round", pd.Int64Dtype()),
+    ("SEASON", pd.StringDtype()),
+    ("STAGE", pd.StringDtype()),
+    ("ROUND", pd.Int64Dtype()),
     ("ID", pd.StringDtype()),
-    ("Played", pd.BooleanDtype()),
-    ("Date", pd.StringDtype()),
-    ("Time", pd.StringDtype()),
-    ("H_Team", pd.StringDtype()),
-    ("A_Team", pd.StringDtype()),
-    ("H_Score", pd.Int64Dtype()),
-    ("A_Score", pd.Int64Dtype()),
-    ("Href", pd.StringDtype())
+    ("PLAYED", pd.BooleanDtype()),
+    ("DATE", pd.StringDtype()),
+    ("TIMR", pd.StringDtype()),
+    ("H_TEAM", pd.StringDtype()),
+    ("A_TEAM", pd.StringDtype()),
+    ("H_SCORE", pd.Int64Dtype()),
+    ("A_SCORE", pd.Int64Dtype()),
+    ("HREF", pd.StringDtype())
 ]
 
 col_names_main_info = [
-    ("Season", pd.StringDtype()),
-    ("Game_ID", pd.StringDtype()),
-    ("Stage", pd.StringDtype()),
-    ("Round", pd.Int64Dtype()),
-    ("Date", pd.StringDtype()),
-    ("Time", pd.StringDtype()),
+    ("SEASON", pd.StringDtype()),
+    ("GAME_ID", pd.StringDtype()),
+    ("STAGE", pd.StringDtype()),
+    ("ROUND", pd.Int64Dtype()),
+    ("DATE", pd.StringDtype()),
+    ("TIME", pd.StringDtype()),
     ("Venue", pd.StringDtype()),
     ("Attendance", pd.Int64Dtype()),
     ("Referee1", pd.StringDtype()),
@@ -53,26 +53,26 @@ col_names_main_info = [
 ]
 
 col_names_box_score = [
-    ("Season", pd.StringDtype()),
-    ("Game_ID", pd.StringDtype()),
-    ("Type", pd.StringDtype()),
-    ("Team", pd.StringDtype()),
-    ("Player_Number", pd.Int64Dtype()),
-    ("Player_Name", pd.StringDtype()),
-    ("Player_ID", pd.Int64Dtype()),
-    ("Minutes", pd.Int64Dtype()),
-    ("Seconds", pd.Int64Dtype()),
-    ("Points", pd.Int64Dtype()),
-    ("FG_Perc", pd.Float64Dtype()),
+    ("SEASON", pd.StringDtype()),
+    ("GAME_ID", pd.StringDtype()),
+    ("TYPE", pd.StringDtype()),
+    ("TEAM", pd.StringDtype()),
+    ("PLAYER_NUMBER", pd.Int64Dtype()),
+    ("PLAYER_NAME", pd.StringDtype()),
+    ("PLAYER_ID", pd.Int64Dtype()),
+    ("MINUTES", pd.Int64Dtype()),
+    ("SECONDS", pd.Int64Dtype()),
+    ("POINTS", pd.Int64Dtype()),
+    ("FG_PERC", pd.Float64Dtype()),
     ("FG2_M", pd.Int64Dtype()),
     ("FG2_A", pd.Int64Dtype()),
-    ("FG2_Perc", pd.Float64Dtype()),
+    ("FG2_PERC", pd.Float64Dtype()),
     ("FG3_M", pd.Int64Dtype()),
     ("FG3_A", pd.Int64Dtype()),
-    ("FG3_Perc", pd.Float64Dtype()),
+    ("FG3_PERC", pd.Float64Dtype()),
     ("FT_M", pd.Int64Dtype()),
     ("FT_A", pd.Int64Dtype()),
-    ("FT_Perc", pd.Float64Dtype()),
+    ("FT_PERC", pd.Float64Dtype()),
     ("REB_O", pd.Int64Dtype()),
     ("REB_D", pd.Int64Dtype()),
     ("REB_T", pd.Int64Dtype()),
@@ -83,45 +83,45 @@ col_names_box_score = [
     ("BLC_AG", pd.Int64Dtype()),
     ("FLS_CM", pd.Int64Dtype()),
     ("FLS_RV", pd.Int64Dtype()),
-    ("Plus_Minus", pd.Int64Dtype()),
-    ("Val", pd.Int64Dtype()),
-    ("Pts_Paint", pd.Int64Dtype()),
-    ("Pts_2nd_Chance", pd.Int64Dtype()),
-    ("Pts_Fast_Break", pd.Int64Dtype())
+    ("PLUS_MINUS", pd.Int64Dtype()),
+    ("VAL", pd.Int64Dtype()),
+    ("PTS_PAINT", pd.Int64Dtype()),
+    ("PTS_2ND_CHANCE", pd.Int64Dtype()),
+    ("PTS_FAST_BREAK", pd.Int64Dtype())
 ]
 
 col_names_shots = [
-    ("Season", pd.StringDtype()),
-    ("Game_ID", pd.StringDtype()),
-    ("Team", pd.StringDtype()),
+    ("SEASON", pd.StringDtype()),
+    ("GAME_ID", pd.StringDtype()),
+    ("TEAM", pd.StringDtype()),
     ("X", pd.Float64Dtype()),
     ("Y", pd.Float64Dtype()),
-    ("Made", pd.BooleanDtype()),
-    ("Player_ID", pd.Int64Dtype()),
-    ("Player_Name", pd.StringDtype())
+    ("MADE", pd.BooleanDtype()),
+    ("PLAYER_ID", pd.Int64Dtype()),
+    ("PLAYER_NAME", pd.StringDtype())
 ]
 
 col_names_score_evolution = [
-    ("Season", pd.StringDtype()),
-    ("Game_ID", pd.StringDtype()),
-    ("Minute", pd.Int64Dtype()),
-    ("H_Score", pd.Int64Dtype()),
-    ("A_Score", pd.Int64Dtype())
+    ("SEASON", pd.StringDtype()),
+    ("GAME_ID", pd.StringDtype()),
+    ("MINUTE", pd.Int64Dtype()),
+    ("H_SCORE", pd.Int64Dtype()),
+    ("A_SCORE", pd.Int64Dtype())
 ]
 
 col_names_play_by_play = [
-    ("Season", pd.StringDtype()),
-    ("Game_ID", pd.StringDtype()),
-    ("Quarter", pd.StringDtype()),
-    ("Clock_Minutes", pd.Int64Dtype()),
-    ("Clock_Seconds", pd.Int64Dtype()),
-    ("Team", pd.StringDtype()),
-    ("H_Score", pd.Int64Dtype()),
-    ("A_Score", pd.Int64Dtype()),
-    ("Player_Number", pd.Int64Dtype()),
-    ("Player_ID", pd.Int64Dtype()),
-    ("Player_Name", pd.StringDtype()),
-    ("Play_Type", pd.StringDtype()),
-    ("Play_Note", pd.StringDtype()),
-    ("Missing_Data", pd.BooleanDtype())
+    ("SEASON", pd.StringDtype()),
+    ("GAME_ID", pd.StringDtype()),
+    ("QUARTER", pd.StringDtype()),
+    ("MINUTES", pd.Int64Dtype()),
+    ("SECONDS", pd.Int64Dtype()),
+    ("TEAM", pd.StringDtype()),
+    ("H_SCORE", pd.Int64Dtype()),
+    ("A_SCORE", pd.Int64Dtype()),
+    ("PLAYER_NUMBER", pd.Int64Dtype()),
+    ("PLAYER_ID", pd.Int64Dtype()),
+    ("PLAYER_NAME", pd.StringDtype()),
+    ("PLAY_TYPE", pd.StringDtype()),
+    ("PLAY_NOTE", pd.StringDtype()),
+    ("MISSING_DATA", pd.BooleanDtype())
 ]
