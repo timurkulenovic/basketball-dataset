@@ -6,7 +6,7 @@ data of **high granularity** from as many basketball games as possible.
 This is an ongoing project. I will try to regularly fix the possible mistakes in the data,
 update the datasets and increase the granularity of the data, if that is possible.
 
-Directory [src/](src/) contains the code that was used to download, scrape, collect and edit all the data, that is in [data/](data/).
+Directory [src/](src/) contains the code that was used to download, scrape, collect and edit all the data that is in [data/](data/).
 
 Currently data available for the following leagues:
 * [Euroleague](data/euroleague)
