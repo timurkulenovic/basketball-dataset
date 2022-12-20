@@ -1,5 +1,9 @@
 # Eurolegue dataset
 
+Data is organized in 7 different .parquet files described below.
+
+[JSON files](json/seasons/), downloaded from the Euroleague website, are also available. They were the source to create this dataset, however some JSON files originally had missing data. I fixed those files by web scraping the old Euroleague website (on December 2022 available [here](admin.euroleague.net)) and editing *by hand*.
+
 | Filename       | Meaning of one row                                 |
 | -------------- | ---------------------------------------------------|
 | games          | basic game data                                    |
