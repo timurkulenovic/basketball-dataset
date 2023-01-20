@@ -71,13 +71,13 @@ def open_files(DATA_DIR, exceptions, first_season, last_season):
         if not str(year).startswith('.') and year >= first_season:
             print(year)
             # Go through games in a season
-            for game_id in os.listdir(os.path.join(DATA_DIR, "json", "seasons", str(year))):
+            for game_id in os.listdir(os.path.join(DATA_DIR, "games", "json", "seasons", str(year))):
                 if not game_id.startswith('.'):
                     # Check if game is in the exceptions
                     if (str(year), str(game_id)) not in exceptions:
                         game_data = {}
                         for stat in JSON_STATS:
-                            path = os.path.join(DATA_DIR, "json", "seasons", str(year),
+                            path = os.path.join(DATA_DIR, "games", "json", "seasons", str(year),
                                                 game_id, f"{year}_{game_id}_{stat}.json")
                             with open(path, 'r') as f:
                                 game_data[stat] = json.load(f)
@@ -92,4 +92,4 @@ def save_data(DATA_DIR, games_data):
         df = pd.DataFrame(data=stat_data, columns=col_names)
         for col_name, col_type in columns:
             df[col_name] = df[col_name].astype(col_type)
-        df.to_parquet(f"{DATA_DIR}/{stat}.parquet", index=False)
+        df.to_parquet(f"{DATA_DIR}/games/parquet/{stat}.parquet", index=False)
