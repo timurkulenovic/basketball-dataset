@@ -1,6 +1,7 @@
 from json_site import get_json, get_games_data
 from src.other.venues import VenueScraper
 
+
 def download():
     codes = get_json.get_finals_codes(BASE_URL, DATA_DIR, CHROME_DRIVER_PATH, start=2022, end=2000)
     get_json.download_json_files(DATA_DIR, LEAGUE_CODE, BASE_URL_API, codes)
