@@ -12,6 +12,6 @@ Data is organized in 7 **parquet** files described in the table.
 | shots          | information about shot                             |
 | comparison     | direct team comparison in selected stat. categories|
 
-[JSON files](json/seasons/), downloaded from the Euroleague website, are also available. They were the source to create this dataset, however some JSON files originally had missing and/or incorrect data. I fixed those files by web scraping the old Euroleague website (on December 2022 available [here](admin.euroleague.net)) and editing *by hand*.
+[JSON files](json/seasons/), downloaded from the Euroleague website, are also available. They were the source to create this dataset, however some JSON files originally had missing and/or incorrect data. I fixed those files by web scraping the old Euroleague website (on December 2022 available [here](admin.euroleague.net)) and editing them manually.
 
 
