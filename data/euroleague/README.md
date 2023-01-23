@@ -1,5 +1,7 @@
 # Eurolegue dataset
 
+## Games
+
 Data is organized in 7 **parquet** files described in the table.
 
 | Filename       | Meaning of one row                                 |
