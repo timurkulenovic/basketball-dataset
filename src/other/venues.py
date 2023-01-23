@@ -19,7 +19,7 @@ class VenueScraper:
         self.data_dir = data_dir
         main_info_path = f"{self.data_dir}/games/parquet/main_info.parquet"
         self.main_info = pd.read_parquet(main_info_path)
-        self.unique_venues = pd.DataFrame(self.main_info["VENUE"].unique(), columns=["VENUE"])
+        self.unique_venues = pd.DataFrame(self.main_info["VENUE"].unique().dropna(), columns=["VENUE"])
         self.full_venues = self.main_info.groupby(['VENUE', 'H_TEAM']).size().reset_index().drop(0, axis=1)
         self.chrome_driver_path = chrome_driver_path
         self.driver = None

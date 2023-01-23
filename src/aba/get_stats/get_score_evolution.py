@@ -2,10 +2,9 @@ import requests
 import json
 import pandas as pd
 import numpy as np
-from games import BASE_URL
 
 
-def get_score_evolution(bs_object, game_data):
+def get_score_evolution(bs_object, game_data, BASE_URL):
     s_id, g_id = game_data["ID"].split("_")
     res = requests.get(f"{BASE_URL}/live-match/rezultati-1718/create_json.php?id={g_id}&sez={s_id}&lea=1")
     try:

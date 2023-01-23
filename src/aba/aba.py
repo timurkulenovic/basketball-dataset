@@ -18,14 +18,13 @@ from src.aba.col_names import col_names_box_score
 from src.aba.col_names import col_names_score_evolution
 from src.aba.col_names import col_names_shots
 
-from get_stats.get_main_info import get_main_info
-from get_stats.get_box_score import get_box_score
-from get_stats.get_score_evolution import get_score_evolution
-from get_stats.get_shots import get_shots
-from get_stats.get_play_by_play import get_play_by_play
+from src.aba.get_stats.get_main_info import get_main_info
+from src.aba.get_stats.get_box_score import get_box_score
+from src.aba.get_stats.get_score_evolution import get_score_evolution
+from src.aba.get_stats.get_shots import get_shots
+from src.aba.get_stats.get_play_by_play import get_play_by_play
 
-BASE_URL = "https://www.aba-liga.com"
-DATA_PATH = "../../data/aba/games/parquet"
+from src.other.venues import VenueScraper
 
 
 def extract_info(game):
@@ -95,7 +94,7 @@ def get_games():
     # Write to a file
     games_df = pd.DataFrame(data=games, columns=["Season", "Stage", "Round", "ID", "Played", "Date", "Time",
                                                  "H_Team", "A_Team", "H_Score", "A_Score", "Href"])
-    games_df.to_parquet(f"{DATA_PATH}/games.parquet", index=False)
+    games_df.to_parquet(f"{DATA_DIR}/games.parquet", index=False)
 
 
 def init_games_data():
@@ -106,7 +105,7 @@ def init_games_data():
 
 
 def get_games_data():
-    games = pd.read_parquet(f"{DATA_PATH}/games.parquet")
+    games = pd.read_parquet(f"{DATA_DIR}/games.parquet")
     games['json'] = games.apply(lambda x: x.to_json(), axis=1)
     games_data = init_games_data()
 
@@ -118,7 +117,7 @@ def get_games_data():
             req_game = requests.get(game_data["Href"])
             bs_game = bs(req_game.text, "html.parser")
             for stat, function, columns in STATS:
-                stat_data = function(bs_game, game_data)
+                stat_data = function(bs_game, game_data, BASE_URL)
 
                 if len(stat_data) > 0:
                     games_data[stat].append(stat_data)
@@ -128,11 +127,21 @@ def get_games_data():
                 df = pd.DataFrame(data=data, columns=col_names)
                 for col_name, col_type in columns:
                     df[col_name] = df[col_name].astype(col_type)
-                df.to_parquet(f"{DATA_PATH}/{stat}.parquet", index=False)
+                df.to_parquet(f"{DATA_DIR}/{stat}.parquet", index=False)
+
+
+def get_venues():
+    venue_scraper = VenueScraper(DATA_DIR, CHROME_DRIVER_PATH, "basketball", "arena")
+    # venue_scraper.get_capacity_data()
+    # venue_scraper.get_location_data()
+    venue_scraper.merge_files()
 
 
 if __name__ == "__main__":
-    get_games()
+    BASE_URL = "https://www.aba-liga.com"
+    DATA_DIR = "../../data/aba"
+    CHROME_DRIVER_PATH = "../other/chromedriver"
+
     STATS = [
         ("main_info", get_main_info, col_names_main_info),
         ("box_score", get_box_score, col_names_box_score),
@@ -140,4 +149,7 @@ if __name__ == "__main__":
         ("shots", get_shots, col_names_shots),
         ("play_by_play", get_play_by_play, col_names_play_by_play)
         ]
-    get_games_data()
+
+    # get_games()
+    # get_games_data()
+    get_venues()

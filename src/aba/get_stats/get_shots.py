@@ -1,11 +1,10 @@
 import requests
 import json
 import pandas as pd
-from games import BASE_URL
 import numpy as np
 
 
-def get_shots(bs_object, game_data):
+def get_shots(bs_object, game_data, BASE_URL):
     s_id, g_id = game_data["ID"].split("_")
     res = requests.get(f"{BASE_URL}/live-match/rezultati-1718/create_shooting_chart.php?id={g_id}&sez={s_id}&lea=1")
     shots_json = json.loads(res.text)

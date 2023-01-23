@@ -1,4 +1,4 @@
 .DS_Store
 **/.DS_Store
 .idea/
-other/google_maps_api.py
+src/other/google_maps_api.py

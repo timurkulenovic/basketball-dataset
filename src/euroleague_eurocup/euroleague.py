@@ -14,8 +14,8 @@ def get_games(ex):
 
 def get_venues():
     venue_scraper = VenueScraper(DATA_DIR, CHROME_DRIVER_PATH, "basketball", "arena")
-    # venue_scraper.get_capacity_data()
-    # venue_scraper.get_location_data()
+    venue_scraper.get_capacity_data()
+    venue_scraper.get_location_data()
     venue_scraper.merge_files()
 
 

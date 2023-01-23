@@ -1,0 +1,56 @@
+,VENUE,H_TEAM,LAT,LNG,LOCATION,MANUAL_ENTRY_x,CAPACITY,MANUAL_ENTRY_y
+0,Arena Bonifika,Koper Primorska,45.5436664,13.7274513,"Koper, Slovenia",False,3000,False
+1,Arena KK FMP,Crvena zvezda mts,44.73102403240696,20.376638823680157,"Stjepana Stupanca 15а, Beograd, Srbija",True,3000,False
+2,Arena KK FMP,FMP Meridian,44.73102403240696,20.376638823680157,"Stjepana Stupanca 15а, Beograd, Srbija",True,3000,False
+3,Arena Stožice,Cedevita Olimpija,46.0813903,14.5214679,"Ljubljana, Slovenia",False,12480,False
+4,Arena Stožice,Petrol Olimpija,46.0813903,14.5214679,"Ljubljana, Slovenia",False,12480,False
+5,Baldekin,Šibenka Dalmare,43.73026122049988,15.900460712614136,"Ul. Stjepana Radića 44, 22000, Šibenik, Hrvaška",True,2000,True
+6,Beogradska Štark Arena,Partizan Mozzart Bet,44.81414609999999,20.4212894,"Novi Beograd, Beograd, Grad Beograd, Serbia",False,19394,False
+7,Boris Trajkovski Sports Center,Karpoš Sokoli,42.009527,21.4040192,"Karposhi, Shkupi, Komuna e Karposhit, Qyteti i Shkupit, North Macedonia",False,7500,True
+8,Boris Trajkovski Sports Center,MZT Skopje Aerodrom,42.009527,21.4040192,"Karposhi, Shkupi, Komuna e Karposhit, Qyteti i Shkupit, North Macedonia",False,7500,True
+9,Dom sportova,Cedevita,45.808124,15.9524627,"Zagreb, Grad Zagreb, Croatia",False,3100,False
+10,Dom sportova,Cibona,45.808124,15.9524627,"Zagreb, Grad Zagreb, Croatia",False,3100,False
+11,Dvorana Borac,Borac Mozzart,43.89744715570858,20.35254202933937,"Bate Jankovica 112, Čačak 32000, Srbija",True,3000,False
+12,Dvorana Borik,Banjalučka pivara,44.7738418,17.2025363,"Banja Luka, Republika Srpska, Bosnia and Herzegovina",False,4000,True
+13,Dvorana Golovec,Tajfun,46.2396929,15.2719543,"Celje, Slovenia",False,3200,True
+14,Dvorana Krešimir Ćosić,Zadar,44.1190692,15.2450264,"Zadar, Općina Zadar, Zadarska županija, Croatia",False,8500,False
+15,Dvorana Mirza Delibašić,Bosna Royal,43.8545524,18.4140301,"Sarajevo, Sarajevo Canton, Federation of Bosnia and Herzegovina, Bosnia and Herzegovina",False,6500,True
+16,Dvorana Mladosti,Triglav osiguranje,45.3308488,14.460118,"Rijeka, Općina Rijeka, Primorsko-goranska županija, Croatia",False,4000,True
+17,Dvorana Smederevo,Mega MIS,44.660556,20.9309104,"Smederevo, Podunavski okrug, Serbia",False,2800,True
+18,Dvorana Valjevo,Metalac Farmakom,44.2741532,19.8836559,"Valjevo, Kolubara District, Serbia",False,2500,True
+19,Hala sportova Ranko Žeravica,Mega MIS,44.8276589,20.4064171,"Novi Beograd, Beograd, Grad Beograd, Serbia",False,5000,False
+20,Hala sportova Ranko Žeravica,Partizan Mozzart Bet,44.8276589,20.4064171,"Novi Beograd, Beograd, Grad Beograd, Serbia",False,5000,False
+21,J.U. Sportska dvorana Laktaši,Igokea m:tel,44.9076535,17.3083533,"Laktaši, Republika Srpska, Bosnia and Herzegovina",False,3050,False
+22,Jezero,Radnički,44.0133441369134,20.92371008668509,"Grada Sirena 15, Kragujevac 34000, Srbija",True,3600,True
+23,Kodeljevo,Geoplin Slovan,46.0493379,14.529323,"Ljubljana, Slovenia",False,3000,True
+24,Komunalni center,Helios Suns,46.13972410752013,14.59521100648424,"Mestni trg 1, 1230 Domžale",True,2200,True
+25,Košarkaška dvorana Aleksandar Nikolić,Crvena zvezda mts,44.815548,20.4847738,"Beograd, Grad Beograd, Serbia",False,8000,False
+26,Košarkaška dvorana Aleksandar Nikolić,Partizan Mozzart Bet,44.815548,20.4847738,"Beograd, Grad Beograd, Serbia",False,8000,False
+27,Košarkaška dvorana Jazine,Zadar,44.1107674,15.2328616,"Zadar, Općina Zadar, Zadarska županija, Croatia",False,3500,False
+28,Košarkaški centar Dražen Petrović,Cedevita,45.8026091,15.9635008,"Zagreb, Grad Zagreb, Croatia",False,5400,False
+29,Košarkaški centar Dražen Petrović,Cibona,45.8026091,15.9635008,"Zagreb, Grad Zagreb, Croatia",False,5400,False
+30,Košarkaški centar Dražen Petrović,Zagreb CO,45.8026091,15.9635008,"Zagreb, Grad Zagreb, Croatia",False,5400,False
+31,Lovćen Sports Centre,Lovćen 1947,42.3994444,18.8188889,"Cetinje Municipality, Montenegro",False,1500,True
+32,Mala dvorana KK Split,Split,43.5088369018378,16.45245267861313,"21000, Split, Hrvaška",True,3500,False
+33,Mala dvorana Tivoli,Cedevita Olimpija,46.0597998,14.4949445,"Ljubljana, Slovenia",False,7000,False
+34,Mala dvorana Tivoli,Petrol Olimpija,46.0597998,14.4949445,"Ljubljana, Slovenia",False,7000,False
+35,Mega Factory Hall,Mega MIS,44.766324388136944,20.49299951881597,"Braće Jerković 119a, Beograd 11010, Srbija",True,500,True
+36,Mejdan,Sloboda Dita,44.53728500948411,18.665330765739803,"Bosne Srebrene, Tuzla 75000, Bosna in Hercegovina",True,5000,True
+37,Menora Mivtachim Arena,Maccabi Electra,32.0612909,34.79138030000001,"Tel Aviv-Yafo, Tel Aviv District, Israel",False,10700,True
+38,Millenium centar,Vršac,45.1183624,21.311286,"Vršac, Južnobanatski okrug, Vojvodina, Serbia",False,4400,True
+39,Nikšić Sports Center,Sutjeska,42.7804735,18.9561661,"Niksic, Nikšić Municipality, Montenegro",False,3000,True
+40,Pecara,Široki,43.3826412,17.5922415,"Široki Brijeg, Županija Zapadnohercegovačka, Federacija Bosne i Hercegovine, Bosnia and Herzegovina",False,4500,True
+41,SPC Vojvodina,Vojvodina Srbijagas,45.2469559,19.8453064,"Novi Sad, Južnobački okrug, Vojvodina, Serbia",False,8000,True
+42,SRC Topolica,Mornar-Barsko zlato,42.1036076,19.0906471,"Bar, Bar Municipality, Montenegro",False,2500,False
+43,Sportovni Hala,CEZ Nymburk,50.1068966,14.4328299,"Bubeneč, Praha 7, Hlavní město Praha, Hlavní město Praha, Czechia",False,1200,True
+44,Sports Hall Pinki,Mega MIS,44.8406581,20.4110896,"Zemun, Beograd, Grad Beograd, Serbia",False,2000,True
+45,Sportska dvorana Verde,Budućnost VOLI,42.41770770590237,19.20160844915174,"Donja Gorica bb, Podgorica 81000, Črna gora",True,2100,True
+46,Sportski centar Jane Sandanski,MZT Skopje Aerodrom,41.993254,21.464572,"North Macedonia, Aerodrom, Skopje, Aerodrom, Greater Skopje",False,6500,True
+47,Sportski centar Morača,Budućnost VOLI,42.4380903,19.2540137,"Podgorica, Glavni grad Podgorica, Montenegro",False,6000,False
+48,Sportski centar Morača,SC Derby,42.4380903,19.2540137,"Podgorica, Glavni grad Podgorica, Montenegro",False,6000,False
+49,Sutinska vrela,Cedevita,45.8178834,15.8330748,"Zagreb, Grad Zagreb, Croatia",False,2000,True
+50,Tiszaligeti Sportcsarnok,Szolnoki Olaj,47.1692329,20.1974655,"Szolnok, Hungary",False,2200,True
+51,Tri lilije,Zlatorog Laško,46.16474300000001,15.2304815,"Laško, Slovenia",False,2500,True
+52,Trnsko,Zagreb CO,45.7731064,15.9647123,"Trnsko, Zagreb, City of Zagreb, Croatia",False,2000,True
+53,Universiada Hall,Levski Sofija,42.6807456,23.3558025,"g.k. Yavorov, Sofia, Sofia City Province, Bulgaria",False,4000,True
+54,ŠD Leona Štuklja Novo Mesto,Krka,45.7949926,15.1593383,"Novo mesto, Slovenia",False,2500,True
