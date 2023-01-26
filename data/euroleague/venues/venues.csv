@@ -144,10 +144,10 @@
 142,O2 ARENA,CSKA MOSCOW,51.503038,0.0031543,"Greater London, England, United Kingdom",False,20000,False
 143,O2 ARENA,FC BARCELONA REGAL,51.503038,0.0031543,"Greater London, England, United Kingdom",False,20000,False
 144,O2 ARENA,OLYMPIACOS PIRAEUS,51.503038,0.0031543,"Greater London, England, United Kingdom",False,20000,False
-145,O2 WORLD,ALBA BERLIN,52.5063143,13.4436316,"Bezirk Friedrichshain-Kreuzberg, Berlin, Kreisfreie Stadt Berlin, Berlin, Germany",False,20000,False
-146,O2 WORLD,OLYMPIACOS PIRAEUS,52.5063143,13.4436316,"Bezirk Friedrichshain-Kreuzberg, Berlin, Kreisfreie Stadt Berlin, Berlin, Germany",False,20000,False
-147,O2 WORLD,PANATHINAIKOS,52.5063143,13.4436316,"Bezirk Friedrichshain-Kreuzberg, Berlin, Kreisfreie Stadt Berlin, Berlin, Germany",False,20000,False
-148,O2 WORLD,REGAL FC BARCELONA,52.5063143,13.4436316,"Bezirk Friedrichshain-Kreuzberg, Berlin, Kreisfreie Stadt Berlin, Berlin, Germany",False,20000,False
+145,O2 WORLD,ALBA BERLIN,52.5063143,13.4436316,"Bezirk Friedrichshain-Kreuzberg, Berlin, Kreisfreie Stadt Berlin, Berlin, Germany",False,14500,False
+146,O2 WORLD,OLYMPIACOS PIRAEUS,52.5063143,13.4436316,"Bezirk Friedrichshain-Kreuzberg, Berlin, Kreisfreie Stadt Berlin, Berlin, Germany",False,14500,False
+147,O2 WORLD,PANATHINAIKOS,52.5063143,13.4436316,"Bezirk Friedrichshain-Kreuzberg, Berlin, Kreisfreie Stadt Berlin, Berlin, Germany",False,14500,False
+148,O2 WORLD,REGAL FC BARCELONA,52.5063143,13.4436316,"Bezirk Friedrichshain-Kreuzberg, Berlin, Kreisfreie Stadt Berlin, Berlin, Germany",False,14500,False
 149,OAKA,PANATHINAIKOS ATHENS,38.037713,23.7842981,"Marousi, Vorios Tomeas Athinon, Greece",False,19443,False
 150,OAKA,PANATHINAIKOS OPAP ATHENS,38.037713,23.7842981,"Marousi, Vorios Tomeas Athinon, Greece",False,19443,False
 151,OAKA Altion,PANATHINAIKOS ATHENS,38.037713,23.7842981,"Marousi, Vorios Tomeas Athinon, Greece",False,19443,False
@@ -155,9 +155,9 @@
 153,OLIVIA SPORT HALL,ASSECO PROKOM SOPOT,54.401361928821714,18.5720242181974,"Gdansk,Poland",True,5500,True
 154,OLIVIA SPORT HALL,PROKOM TREFL SOPOT,54.401361928821714,18.5720242181974,"Gdansk,Poland",True,5500,True
 155,OLYMPIC COMPLEX-HELLINIKON,PANIONIOS ON TELECOMS,37.89705461699136,23.723174116641285,"Athens,Greece",True,15000,False
-156,OLYMPIC SPORTS CENTER ATHENS,PANATHINAIKOS ATHENS,38.0386851,23.7864059,"Athina, Vorios Tomeas Athinon, Greece",False,69618,False
-157,OLYMPIC SPORTS CENTER ATHENS,PANATHINAIKOS OPAP ATHENS,38.0386851,23.7864059,"Athina, Vorios Tomeas Athinon, Greece",False,69618,False
-158,OLYMPIC SPORTS CENTER ATHENS,PANATHINAIKOS SUPERFOODS ATHENS,38.0386851,23.7864059,"Athina, Vorios Tomeas Athinon, Greece",False,69618,False
+156,OLYMPIC SPORTS CENTER ATHENS,PANATHINAIKOS ATHENS,38.0386851,23.7864059,"Athina, Vorios Tomeas Athinon, Greece",False,19443,True
+157,OLYMPIC SPORTS CENTER ATHENS,PANATHINAIKOS OPAP ATHENS,38.0386851,23.7864059,"Athina, Vorios Tomeas Athinon, Greece",False,19443,True
+158,OLYMPIC SPORTS CENTER ATHENS,PANATHINAIKOS SUPERFOODS ATHENS,38.0386851,23.7864059,"Athina, Vorios Tomeas Athinon, Greece",False,19443,True
 159,PAB. DEP. COMUNIDAD DE MADRID,MONTEPASCHI SIENA,40.4167515,-3.7038322,"Community of Madrid, Madrid, Spain",False,12000,True
 160,PAB. DEP. COMUNIDAD DE MADRID,REAL MADRID,40.4167515,-3.7038322,"Community of Madrid, Madrid, Spain",False,12000,True
 161,PAB. DEP. COMUNIDAD DE MADRID,TAU CERAMICA,40.4167515,-3.7038322,"Community of Madrid, Madrid, Spain",False,12000,True
