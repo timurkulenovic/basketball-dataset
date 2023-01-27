@@ -28,4 +28,4 @@ if __name__ == "__main__":
 
     # download_games()
     # get_games(ex=[])
-    get_venues()
+    # get_venues()
