@@ -3,7 +3,7 @@ from src.other.venues import VenueScraper
 
 
 def download_games():
-    codes = get_json.get_finals_codes(BASE_URL, DATA_DIR, CHROME_DRIVER_PATH, start=2022, end=2000)
+    codes = get_json.get_finals_codes(BASE_URL, DATA_DIR, CHROME_DRIVER_PATH, start=2022, end=2022)
     get_json.download_json_files(DATA_DIR, LEAGUE_CODE, BASE_URL_API, codes)
 
 
@@ -26,6 +26,6 @@ if __name__ == "__main__":
     CHROME_DRIVER_PATH = "../other/chromedriver"
     LEAGUE_CODE = "E"
 
-    # download_games()
-    # get_games(ex=[])
+    download_games()
+    get_games(ex=[])
     # get_venues()
