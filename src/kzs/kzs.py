@@ -230,7 +230,7 @@ def get_all_games(d):
 if __name__ == "__main__":
     BASE_URL = "https://www.kzs.si/"
     DATA_DIR = "../../../data/basketball/kzs"
-    CHROME_DRIVER_PATH = "../../other/chromedriver"
+    CHROME_DRIVER_PATH = "../other/chromedriver"
 
     create_dir()
     driver = selenium_driver(f"{BASE_URL}clanek/Tekmovanja/Liga-Nova-KBM/cid/66", CHROME_DRIVER_PATH)
