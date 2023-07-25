@@ -35,7 +35,7 @@ def get_stats(bs_object, row_type):
     return stats_data
 
 
-def get_box_score(bs_object, game_data):
+def get_box_score(bs_object, game_data, BASE_URL):
     box_players_home_bs, box_players_away_bs = bs_object.find_all("table", {"class": "match_boxscore_team_table"})
     box_teams_bs = bs_object.find("table", {"class": "match_boxscore_teams_compare_table"})
 

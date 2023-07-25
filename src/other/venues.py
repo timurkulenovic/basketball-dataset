@@ -1,9 +1,9 @@
-import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup as bs
 import requests
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 import time
-from src.other.selenium_init import selenium_driver
 from src.other.google_maps_api import google_maps_api_key
 import googlemaps
 import re
@@ -12,6 +12,15 @@ import re
 BASE_URL = "https://www.google.com"
 s = requests.Session()
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
+
+
+def selenium_driver(url, driver_path):
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    wd = webdriver.Chrome(driver_path)
+    wd.get(url)
+    time.sleep(2)
+    return wd
 
 
 class VenueScraper:

@@ -97,7 +97,7 @@ def extract_play_by_play(bs_play_by_play, part_id, h_img_id, a_img_id):
     return np.flip(np.array(play_by_play_part), 0)
 
 
-def get_play_by_play(bs_object, game_data):
+def get_play_by_play(bs_object, game_data, BASE_URL):
     bs_play_by_play = bs_object.find("div", {"class": "match_tab_content_container_play_by_play"})
     if bs_play_by_play.text == "No play by play data for this match.":
         return []

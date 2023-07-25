@@ -58,7 +58,7 @@ def get_referees(bs_object):
     return ref1, ref2, ref3
 
 
-def get_main_info(bs_object, game_data):
+def get_main_info(bs_object, game_data, BASE_URL):
     h_id, a_id = get_team_ids(bs_object)
     venue, attendance = get_venue_and_attendance(bs_object)
     h_quarters, a_quarters = get_scores_by_quarters(bs_object)
