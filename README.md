@@ -14,8 +14,5 @@ Currently data available for the following leagues:
 * [Euroleague](data/euroleague)
 * [Eurocup](data/eurocup)
 * [ABA League](data/aba)
-* [Slovenian basketball league](data/kzs)
-<<<<<<< HEAD
-* [Slovenian basketball league](data/kzs)
-=======
->>>>>>> ab302052645403e4a50b8408ac62aef1cc493afb
+* [Slovenian basketball league](data/slo)
+* [NBA](data/nba)
