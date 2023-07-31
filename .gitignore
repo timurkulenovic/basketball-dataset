@@ -2,3 +2,6 @@
 **/.DS_Store
 .idea/
 src/other/google_maps_api.py
+
+**/__pycache__
+src/other/geckodriver
