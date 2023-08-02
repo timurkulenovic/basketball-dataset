@@ -10,6 +10,7 @@ import pandas as pd
 import json
 import numpy as np
 import requests
+import os
 from bs4 import BeautifulSoup as bs
 
 from src.aba.col_names import col_names_main_info
@@ -105,29 +106,51 @@ def init_games_data():
 
 
 def get_games_data():
-    games = pd.read_parquet(f"{DATA_DIR}/games.parquet")
+    games = pd.read_parquet(f"{DATA_DIR}/games/parquet/games.parquet")
     games['json'] = games.apply(lambda x: x.to_json(), axis=1)
-    games_data = init_games_data()
 
     start = 0
     for i, game_data_str in enumerate(games["json"][start:]):
         game_data = json.loads(game_data_str)
         if game_data["Played"]:
             print(i + start, game_data["Href"])
+            game_dir_path = f"{DATA_DIR}/games/parquet/games/{game_data['ID']}"
+            # if len([name for name in os.listdir(game_dir_path)
+            #         if os.path.isfile(os.path.join(game_dir_path, name))]) == 5:
+            #     continue
             req_game = requests.get(game_data["Href"])
             bs_game = bs(req_game.text, "html.parser")
             for stat, function, columns in STATS:
-                stat_data = function(bs_game, game_data, BASE_URL)
+                file_path = f"{DATA_DIR}/games/parquet/games/{game_data['ID']}/{stat}.parquet"
+                stat_df = []
+                if os.path.exists(file_path):
+                    stat_df = pd.read_parquet(file_path)
+                if not os.path.exists(file_path) or len(stat_df) == 0:
+                    stat_data = function(bs_game, game_data, BASE_URL)
+                    if len(stat_data) == 0:
+                        print(f"No {stat}")
+                    else:
+                        col_names = [c for c, t in columns]
+                        df = pd.DataFrame(data=stat_data, columns=col_names)
+                        for col_name, col_type in columns:
+                            df[col_name] = df[col_name].astype(col_type)
+                        df.to_parquet(file_path, index=False)
 
-                if len(stat_data) > 0:
-                    games_data[stat].append(stat_data)
 
-                col_names = [c for c, t in columns]
-                data = np.concatenate(games_data[stat], axis=0)
-                df = pd.DataFrame(data=data, columns=col_names)
-                for col_name, col_type in columns:
-                    df[col_name] = df[col_name].astype(col_type)
-                df.to_parquet(f"{DATA_DIR}/{stat}.parquet", index=False)
+def join_seasons_data():
+    dir_path = f"{DATA_DIR}/games/parquet"
+    games_data = init_games_data()
+    games = pd.read_parquet(f"{dir_path}/games.parquet")
+    for game_id in games["ID"]:
+        for description, _, _ in STATS:
+            stat_path = f"{dir_path}/games/{game_id}/{description}.parquet"
+            if os.path.exists(stat_path):
+                df = pd.read_parquet(stat_path)
+                df.columns = [col.upper() for col in df.columns]
+                games_data[description].append(df)
+
+    for description, _, _ in STATS:
+        pd.concat(games_data[description]).to_parquet(f"{dir_path}/{description}.parquet")
 
 
 def get_venues():
@@ -150,6 +173,7 @@ if __name__ == "__main__":
         ("play_by_play", get_play_by_play, col_names_play_by_play)
         ]
 
-    get_games()
-    get_games_data()
+    # get_games()
+    # get_games_data()
+    join_seasons_data()
     # get_venues()
