@@ -8,9 +8,7 @@ update the datasets and increase the granularity of the data, if that is possibl
 
 Directory [src/](src/) contains the code that was used to **download**, **scrape**, **collect** and **edit** all the data. Directory [data/](data/) contains the available datasets.
 
-Data is published in **parquet** format.
-
-Currently data available for the following leagues:
+Data is published in **parquet** format and is available for the following leagues:
 * [Euroleague](data/euroleague)
 * [Eurocup](data/eurocup)
 * [ABA League](data/aba)
