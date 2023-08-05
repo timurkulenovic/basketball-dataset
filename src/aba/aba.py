@@ -173,7 +173,7 @@ if __name__ == "__main__":
         ("play_by_play", get_play_by_play, col_names_play_by_play)
         ]
 
-    # get_games()
-    # get_games_data()
+    get_games()
+    get_games_data()
     join_seasons_data()
-    # get_venues()
+    get_venues()

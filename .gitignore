@@ -5,3 +5,5 @@ src/other/google_maps_api.py
 
 **/__pycache__
 src/other/geckodriver
+src/other/chromedriver
+/data/archive/
