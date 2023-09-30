@@ -1,0 +1,76 @@
+VENUE,H_TEAM,LAT,LNG,LOCATION,MANUAL_ENTRY
+Dvorana Tabor,Maribor MESSER,46.5494876,15.6356941,"Upravna enota Maribor, Slovenia",False
+Dvorana Tabor,Maribor Messer,46.5494876,15.6356941,"Upravna enota Maribor, Slovenia",False
+Dvorana Tabor,Maribor Nova KBM,46.5494876,15.6356941,"Upravna enota Maribor, Slovenia",False
+Gimnazija Celje - Center,Celje,46.2324583,15.2643557,"Celje, Slovenia",False
+Hala Tivoli,Cedevita Olimpija,46.0597998,14.4949445,"Ljubljana, Slovenia",False
+Hala Tivoli,Ilirija,46.0597998,14.4949445,"Ljubljana, Slovenia",False
+Hala Tivoli,Nutrispoint Ilirija,46.0597998,14.4949445,"Ljubljana, Slovenia",False
+Hala Tivoli,Petrol Olimpija,46.0597998,14.4949445,"Ljubljana, Slovenia",False
+Hala Tivoli,Union Olimpija,46.0597998,14.4949445,"Ljubljana, Slovenia",False
+Ježica,Parklji,,,,True
+Ježica,Parklji Ljubljana,,,,True
+Ježica,Union Olimpija,,,,True
+Osnovna šola Ponikva,Alpos Šentjur,46.2537063,15.4439412,"Ponikva, Šentjur, Slovenia",False
+OŠ Antona Žnideršiča,Plama Pur,,,,True
+OŠ Koper,Luka Koper,45.54805899999999,13.7301877,"Koper, Koper, Slovenia",False
+OŠ Koper,Sixt Primorska,45.54805899999999,13.7301877,"Koper, Koper, Slovenia",False
+OŠ Srečko Kosovel,Mesarija Prunk Sežana,45.70572420000001,13.8684297,"Sežana, Slovenia",False
+OŠ Venclja Perka,Lastovka Domžale,46.1386788,14.5913571,"Domžale, Slovenia",False
+Stožice,Cedevita Olimpija,46.081169,14.5209039,"Ljubljana, Slovenia",False
+Stožice,Ilirija,46.081169,14.5209039,"Ljubljana, Slovenia",False
+Stožice,Petrol Olimpija,46.081169,14.5209039,"Ljubljana, Slovenia",False
+Stožice,Union Olimpija,46.081169,14.5209039,"Ljubljana, Slovenia",False
+SŠ Srečka Kosovela,Kraški zidar Jadran,,,,True
+SŠ Srečka Kosovela,Mesarija Prunk Sežana,,,,True
+SŠ Srečka Kosovela,Sixt Primorska,,,,True
+"Tri lilije, Laško",Zlatorog,46.16474300000001,15.2304815,"Laško, Slovenia",False
+"Tri lilije, Laško",Zlatorog Laško,46.16474300000001,15.2304815,"Laško, Slovenia",False
+ŠC Postojna,Epic Misel,45.7275208,14.1754888,"Postojna, Slovenia",False
+ŠD Bonifika,Koper Primorska,,,,True
+ŠD Bonifika,Sixt Primorska,,,,True
+ŠD Brinje,Grosbasket,,,,True
+ŠD Brinje,Grosuplje,,,,True
+ŠD Domžale,Helios Domžale,46.1419417,14.5944171,"Domžale, Domžale, Slovenia",False
+ŠD Domžale,Helios Suns,46.1419417,14.5944171,"Domžale, Domžale, Slovenia",False
+ŠD Domžale,Lastovka,46.1419417,14.5944171,"Domžale, Domžale, Slovenia",False
+ŠD Domžale,Vzajemci Lastovka,46.1419417,14.5944171,"Domžale, Domžale, Slovenia",False
+ŠD Hruševec,Alpos Šentjur,,,,True
+ŠD Hruševec,Tajfun,,,,True
+ŠD Hruševec,Šentjur,,,,True
+ŠD Janina,Rogaška Crystal,,,,True
+ŠD Kodeljevo,Geoplin Slovan,43.9695148,-99.9018131,"South Dakota, United States",False
+ŠD Kodeljevo,Ilirija,43.9695148,-99.9018131,"South Dakota, United States",False
+ŠD Kodeljevo,Nutrispoint Ilirija,43.9695148,-99.9018131,"South Dakota, United States",False
+ŠD Kodeljevo,Slovan,43.9695148,-99.9018131,"South Dakota, United States",False
+ŠD Kodeljevo,Zlatorog,43.9695148,-99.9018131,"South Dakota, United States",False
+ŠD Leona Štuklja,Krka,,,,True
+ŠD Lucija,Portorož,,,,True
+ŠD Lucija,Sixt Primorska,,,,True
+ŠD Lukna,AKK Branik Maribor,,,,True
+ŠD Lukna,Maribor Nova KBM,,,,True
+"ŠD Na logu, Hrastnik",Zlatorog Laško,46.1417288,15.0844894,"Hrastnik, Municipality of Hrastnik, Slovenia",False
+ŠD OŠ Milojke Štrukelj,CPG Nova Gorica,45.9571467,13.6448859,"Nova Gorica, Slovenia",False
+ŠD OŠ Poljane,TCG Mercator,,,,True
+ŠD Planina,ECE Triglav,46.2360836,14.3658058,"Kranj, Slovenia",False
+ŠD Poden,LTH Cast Mercator,46.1699576,14.3024122,"Škofja Loka, Slovenia",False
+ŠD Poden,LTH Castings,46.1699576,14.3024122,"Škofja Loka, Slovenia",False
+ŠD Poden,LTH Castings Mercator,46.1699576,14.3024122,"Škofja Loka, Slovenia",False
+ŠD Poden,LTHcast Mercator,46.1699576,14.3024122,"Škofja Loka, Slovenia",False
+ŠD Poden,TCG Mercator,46.1699576,14.3024122,"Škofja Loka, Slovenia",False
+ŠD Podčetrtek,Terme Olimia Podčetrtek,46.1559752,15.5975783,"Podčetrtek, Šmarje pri Jelšah, Slovenia",False
+ŠD Polaj,PRO-TEK Zasavje,,,,True
+ŠD Polaj,Rudar Trbovlje,,,,True
+ŠD Polzela,Hopsi Polzela,46.280897,15.0737321,"Polzela, Žalec, Slovenia",False
+ŠD Polzela,Rogaška,46.280897,15.0737321,"Polzela, Žalec, Slovenia",False
+ŠD Rogaška Slatina,Rogaška,46.2331941,15.6378802,"Rogaška Slatina, Šmarje pri Jelšah, Slovenia",False
+ŠD Rogaška Slatina,Rogaška Crystal,46.2331941,15.6378802,"Rogaška Slatina, Šmarje pri Jelšah, Slovenia",False
+ŠD Zagorje ob Savi,Zagorje,46.1345186,14.9945975,"Zagorje ob Savi, Zagorje ob Savi, Slovenia",False
+ŠD Zagorje ob Savi,Zagorje KD FT,46.1345186,14.9945975,"Zagorje ob Savi, Zagorje ob Savi, Slovenia",False
+ŠD Šenčur,Gorenjska gradbena družba Šenčur,,,,True
+ŠD Šenčur,Šentjur,,,,True
+ŠD Šenčur,Šenčur CP Kranj,,,,True
+ŠD Šenčur,Šenčur Gorenjska gradbena družba,,,,True
+ŠD Šoštanj,Elektra Esotech,46.3788792,15.0500931,"Velenje, Slovenia",False
+ŠD Šoštanj,Elektra Šoštanj,46.3788792,15.0500931,"Velenje, Slovenia",False
+Športna dvorana Zreče,Rogla Zreče,46.3696591,15.3918526,"Zreče, Slovenske Konjice, Slovenia",False
