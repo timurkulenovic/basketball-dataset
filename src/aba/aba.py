@@ -157,7 +157,7 @@ def get_venues():
     venue_scraper = VenueScraper(DATA_DIR, CHROME_DRIVER_PATH, "basketball", "arena")
     venue_scraper.get_capacity_data()
     venue_scraper.get_location_data()
-    venue_scraper.merge_files()
+    # venue_scraper.merge_files()
 
 
 if __name__ == "__main__":
@@ -173,7 +173,7 @@ if __name__ == "__main__":
         ("play_by_play", get_play_by_play, col_names_play_by_play)
         ]
 
-    get_games()
-    get_games_data()
-    join_seasons_data()
+    # get_games()
+    # get_games_data()
+    # join_seasons_data()
     get_venues()

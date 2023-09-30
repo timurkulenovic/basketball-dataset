@@ -1,8 +1,11 @@
 import pandas as pd
 from bs4 import BeautifulSoup as bs
 import requests
-from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
+import time
 import time
 from src.other.google_maps_api import google_maps_api_key
 import googlemaps
@@ -15,28 +18,29 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/201
 
 
 def selenium_driver(url, driver_path):
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    wd = webdriver.Chrome(driver_path)
+    options = Options()
+    options.add_argument("--headless")
+    service = Service(executable_path=driver_path)
+    wd = webdriver.Firefox(options=options, service=service)
     wd.get(url)
     time.sleep(2)
     return wd
 
 
 class VenueScraper:
-    def __init__(self, data_dir, chrome_driver_path, sport, venue_type):
+    def __init__(self, data_dir, driver_path, sport, venue_type):
         self.data_dir = data_dir
         main_info_path = f"{self.data_dir}/games/parquet/main_info.parquet"
         self.main_info = pd.read_parquet(main_info_path)
         self.unique_venues = pd.DataFrame(self.main_info["VENUE"].unique().dropna(), columns=["VENUE"])
         self.full_venues = self.main_info.groupby(['VENUE', 'H_TEAM']).size().reset_index().drop(0, axis=1)
-        self.chrome_driver_path = chrome_driver_path
+        self.driver_path = driver_path
         self.driver = None
         self.sport = sport
         self.venue_type = venue_type
 
     def get_capacity_data(self):
-        self.driver = selenium_driver(BASE_URL, self.chrome_driver_path)
+        self.driver = selenium_driver(BASE_URL, self.driver_path)
         capacities = []
         for index, venue in enumerate(self.unique_venues["VENUE"]):
             print(index, venue, end=" ")

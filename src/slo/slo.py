@@ -182,8 +182,8 @@ def join_seasons_data():
 
 def get_venues():
     venue_scraper = VenueScraper(DATA_DIR, DRIVER_PATH, "basketball", "arena")
-    venue_scraper.get_capacity_data()
-    venue_scraper.get_location_data()
+    # venue_scraper.get_capacity_data()
+    # venue_scraper.get_location_data()
     venue_scraper.merge_files()
 
 
@@ -200,8 +200,8 @@ if __name__ == "__main__":
         ("comparison", get_comparison, col_names_comparison, "advanced_stats")
         ]
 
-    driver = selenium_driver(f"{BASE_URL}clanek/Tekmovanja/Liga-Nova-KBM/cid/66", DRIVER_PATH)
+    # driver = selenium_driver(f"{BASE_URL}clanek/Tekmovanja/Liga-Nova-KBM/cid/66", DRIVER_PATH)
     # get_games(driver)
     # get_games_data(driver)
-    # get_venues()
+    get_venues()
     join_seasons_data()
