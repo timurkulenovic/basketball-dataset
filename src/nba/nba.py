@@ -14,13 +14,11 @@ from src.nba.col_names import col_names_comparison
 
 from src.nba.get_stats.get_main_info import get_main_info
 from src.nba.get_stats.get_box_score import get_box_score
-from src.nba.get_stats.get_score_evolution import get_score_evolution
-from src.nba.get_stats.get_play_by_play import get_play_by_play
-from src.nba.get_stats.get_comparison import get_comparison
 
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
+from selenium.common.exceptions import NoSuchElementException
 
 from src.other.venues import VenueScraper
 
@@ -30,8 +28,9 @@ pd.set_option('display.expand_frame_repr', False)
 
 def selenium_driver(url, driver_path):
     options = Options()
+    options.add_argument("--headless")
     service = Service(executable_path=driver_path)
-    wd = webdriver.Chrome(options=options, service=service)
+    wd = webdriver.Firefox(options=options, service=service)
     wd.get(url)
     time.sleep(2)
     return wd
@@ -119,15 +118,15 @@ def join_seasons_data():
 
 
 def get_venues():
-    venue_scraper = VenueScraper(DATA_DIR, CHROME_DRIVER_PATH, "basketball", "arena")
-    venue_scraper.get_capacity_data()
-    venue_scraper.get_location_data()
+    venue_scraper = VenueScraper(DATA_DIR, DRIVER_PATH, "basketball", "arena")
+    # venue_scraper.get_capacity_data()
+    # venue_scraper.get_location_data()
     venue_scraper.merge_files()
 
 
 if __name__ == "__main__":
     DATA_DIR = "../../data/nba"
-    CHROME_DRIVER_PATH = "../other/chromedriver"
+    DRIVER_PATH = "../other/geckodriver"
 
     STATS = [
         # ("box_score", get_box_score, col_names_box_score, "boxscore"),
@@ -139,5 +138,5 @@ if __name__ == "__main__":
 
     # get_games()
     # get_games_data()
-    join_seasons_data()
-    # get_venues()
+    # join_seasons_data()
+    get_venues()
